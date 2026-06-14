@@ -1,0 +1,41 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+<section>
+  <p class="LatestProd">Latest Products</p>
+
+  <div class="container">
+    <div class="row">
+
+      {% for latest in test %}
+      <div class="col-md-6 col-lg-3 mb-4" id="{{ latest.id }}">
+
+        <div class="card h-100 shadow-sm">
+
+          {% if latest.image %}
+            <img src="{{ latest.image.url }}" class="card-img-top" alt="{{ latest.brand }}">
+          {% endif %}
+
+          <div class="card-body">
+            <h5 class="card-brand">{{ latest.name }}</h5>
+            <p class="card- model">{{ latest.model_name }}</p>
+            <h6 class="text-tprice">₹ {{ latest.price }}</h6>
+
+            <a href="{% url 'latest_list' latest.id %}">
+              <button class="view-btn">VIEW DETAILS</button>
+            </a>
+
+          </div>
+
+        </div>
+
+      </div>
+      {% endfor %}
+
+    </div>
+  </div>
+</section>
+
+{% endblock %}

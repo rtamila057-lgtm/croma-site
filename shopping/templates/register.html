@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+
+   
+<div class="registerstyle">
+
+<form method="POST" class="formstyle">
+
+    {% csrf_token %}
+    
+    <label for="" class="registerf">username</label>
+    <input type="text" name="username" class="inputstyle" placeholder="username">  <br>  <br>
+
+    <label for="" class="registerf">email</label>
+    <input type="text" name="email" class="styleemail" placeholder="email">  <br> <br>
+
+    <label for="" class="registerf">password</label>
+    <input type="text" name="password" class="inputstyle" placeholder="password"> <br> <br> 
+
+    <button class="registerbtn">Submit</button>
+
+</form>
+</div>
+
+{% endblock %}

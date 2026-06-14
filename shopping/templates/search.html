@@ -1,0 +1,170 @@
+{% extends 'base.html' %}
+{% block content %}
+
+
+
+<style>
+
+/* CARD */
+.card{
+    height:220px;
+    display:flex;
+    flex-direction:column;
+    border-radius:14px;
+    overflow:hidden;
+    border:none;
+    box-shadow:0 6px 18px rgba(0,0,0,0.10);
+    transition:0.3s ease;
+}
+
+.card:hover{
+    transform:translateY(-4px);
+    box-shadow:0 10px 25px rgba(0,0,0,0.15);
+}
+
+/* IMAGE HEIGHT REDUCED */
+.card-img-top{
+    height:230px !important;
+    object-fit:cover;
+}
+
+/* BODY BACKGROUND CHANGE */
+.card-body,
+.searchcard-body{
+    background:bisque;   /* light clean gray */
+    padding:10px;
+}
+
+/* TEXT */
+.card-body h6,
+.searchcard-body h6{
+    font-size:19px;
+    font-weight:700;
+    color:#111;
+}
+
+.card-body p,
+.searchcard-body p{
+    font-size:15px;
+    color:#555;
+    margin:2px 0;
+}
+
+/* PRICE */
+.card-body b,
+.searchcard-body b{
+    color:#16a34a;
+    font-size:18px;
+}
+
+/* BUTTON */
+.btn-dark{
+    width:80%;
+    border-radius:8px;
+    font-size:16px;
+    padding:6px;
+    margin-left: 23px;
+    margin-top: 27px;
+    border: 4px solid black;
+}
+
+
+.btn-dark:hover{
+    background-color: aliceblue;
+    color: #111;
+}
+/* SPACING FIX */
+.mb-3{
+    margin-bottom:5px !important;
+}
+
+</style>
+
+
+
+
+<div class="container mt-4">
+    <!-- ================= PRODUCTS ================= -->
+    <h4 class="mb-3">Products</h4>
+
+    <div class="row">
+        {% for p in products %}
+        <div class="col-md-3 col-sm-6 mb-3">
+            <div class="card h-100 p-2">
+
+                <img src="{{ p.image.url }}" class="card-img-top" style="height:200px; object-fit:cover;">
+
+                <div class="card-body">
+                    <h6>{{ p.brand }}</h6>
+                    <p>{{ p.model_name }}</p>
+                    <p><b>₹{{ p.price }}</b></p>
+
+                    <a href="{% url 'product_list' p.id %}" class="btn btn-sm btn-dark">
+                        View
+                    </a>
+                </div>
+
+            </div>
+        </div>
+        {% empty %}
+        <p class="text-muted">No products found</p>
+        {% endfor %}
+    </div>
+
+    <!-- ================= MOBILES ================= -->
+    <h4 class="mb-3 mt-4">Mobiles</h4>
+
+    <div class="row">
+        {% for m in mobiles %}
+        <div class="col-md-3 col-sm-6 mb-3">
+            <div class="card h-100 p-2">
+
+                <img src="{{ m.image.url }}" class="card-img-top" style="height:200px; object-fit:cover;">
+
+                <div class="card-body">
+                    <h6>{{ m.name }}</h6>
+                    <p>{{ m.model_name }}</p>
+                    <p><b>₹{{ m.price }}</b></p>
+
+                    <a href="{% url 'mobile_list' m.id %}" class="btn btn-sm btn-dark">
+                        View
+                    </a>
+                </div>
+
+            </div>
+        </div>
+        {% empty %}
+        <p class="text-muted">No mobiles found</p>
+        {% endfor %}
+    </div>
+
+    <!-- ================= TRENDS ================= -->
+    <h4 class="mb-3 mt-4">Trending</h4>
+
+    <div class="row">
+        {% for t in trends %}
+        <div class="col-md-3 col-sm-6 mb-3">
+            <div class="card h-100 p-2">
+
+                <img src="{{ t.image.url }}" class="card-img-top" style="height:300px; object-fit:cover;">
+
+                <div class="card-body">
+                    <h6>{{ t.name }}</h6>
+                    <p>{{ t.model_name }}</p>
+                    <p><b>₹{{ t.price }}</b></p>
+
+                    <a href="{% url 'latest_list' t.id %}" class="btn btn-sm btn-dark">
+                        View
+                    </a>
+                </div>
+
+            </div>
+        </div>
+        {% empty %}
+        <p class="text-muted">No trending items found</p>
+        {% endfor %}
+    </div>
+
+</div>
+
+{% endblock %}

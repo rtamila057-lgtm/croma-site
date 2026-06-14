@@ -1,0 +1,23 @@
+
+{% extends 'base.html' %}
+{% block content %}
+
+<div class="loginpage">
+<form method="POST" class="logpage">
+ 
+    {% csrf_token %}
+   
+    <label for="" class="uselog">username</label>
+    <input type="text" name="username"  placeholder="Enter username" > <br> <br>
+
+
+    <label for="" class="uselog">password</label>
+    <input type="text" name="password" placeholder="Enter password" class="stylelogcolor"  >  <br> <br>
+
+
+    <button class="logbutton">Submit</button>
+
+</form>   </div>
+
+
+{% endblock %}

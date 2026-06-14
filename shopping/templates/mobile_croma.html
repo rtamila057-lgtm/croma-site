@@ -1,0 +1,45 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+<section>
+
+
+  <div class="container">
+    <div class="row">
+
+      {% for croma in mobile %}
+
+      <div class="col-md-6 col-lg-3 mb-4" id="{{croma.id }}">
+
+        <div class="card h-100 shadow-sm">
+
+          {% if croma.image %}
+            <img src="{{ croma.image.url }}" class="card-img-top" alt="{{ croma.name }}">
+          {% endif %}
+
+          <div class="croma-card-body d-flex flex-column">
+
+            <h5 class="card-pickbrand">{{ croma.name }}</h5>
+            <p class="card-pickmodel">{{ croma.model_name }}</p>
+            <h6 class="text-pickprice">₹ {{ croma.price }}</h6>
+            <p class="card-pickmodel">{{ croma.storage}}</p>
+            <p class="card-pickmodel">{{ croma.battery }}</p>
+            
+            <a href="{% url 'mobile_list' croma.id %}">
+              <button class="view-btn">VIEW DETAILS</button>
+            </a>
+          </div>
+        </div>
+
+      </div>
+
+      {% endfor %}
+
+    </div>
+  </div>
+
+</section>
+
+{% endblock %}

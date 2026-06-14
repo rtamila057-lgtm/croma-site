@@ -1,0 +1,200 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Croma</title>
+
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Your CSS -->
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+
+
+    <!-- Font Awesome (ADD HERE) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+        
+    <link rel="icon" href="{% static 'favicon.ico' %}">
+
+    <!-- google fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+
+<nav class="navbar navbar-expand-lg bg-light shadow-sm">
+  <div class="container-fluid">
+
+    <a class="navbar-brand fw-bold" href="{% url 'home' %}">
+      <i class="fa-solid fa-store "></i>  
+      Croma
+    </a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+        <li class="nav-item">
+          <a class="nav-link" href="{% url 'home' %}">Home</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="{% url 'product' %}">Product</a>
+        </li>
+
+        
+        <li class="nav-item">
+          <a class="nav-link" href="{% url 'mobile' %}">mobile</a>
+        </li>
+
+
+         <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            FestivalDeals
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="{% url 'latest' %}">Latest Model</a></li>
+          </ul>
+        </li>
+
+
+        <li class="nav-item">
+          <a class="nav-link" href="{% url 'login' %}">Login</a>
+        </li>
+
+
+
+        <li class="nav-item">
+          <a class="nav-link" href="{% url 'register' %}">Register</a>
+        </li>
+
+        
+        <li class="nav-item">
+          <a class="nav-link" href="{% url 'cart' %}">Cart</a>
+        </li>
+
+        
+
+      </ul>
+
+      <!-- <form class="d-flex" method="get" action="{% url 'product' %}">
+        <input class="form-control me-4"
+               type="search"
+               name="q"
+               placeholder="Search products..."
+               value="{{ request.GET.q }}">
+        <button class="btn btn-dark me-4" type="submit">Search</button>
+      </form> -->
+
+      <form class="d-flex" method="get" action="{% url 'search' %}">
+    <input class="form-control me-4"
+           type="search"
+           name="q"
+           placeholder="Search everything..."
+           value="{{ request.GET.q }}">
+    <button class="search-btn-dark me-4" type="submit">Search</button>
+</form>
+
+
+
+
+    </div>
+  </div>
+</nav>
+
+
+
+
+
+
+
+
+{% block content %}
+
+{% endblock %}
+
+
+
+<footer class="footer">
+
+  <div class="container">
+
+    
+  <div class="">
+        <h5 class="footcroma"><i class="fa-solid fa-store fa-bounce fa-2xl"></i>  Croma Store</h5>
+        <p class="foottxt">
+          Mobiles • Electronics • Smart Deals
+        </p>
+
+        <p class="footbest">Best mobiles & electronics at affordable price </p>
+
+      </div>
+ 
+    <div class="row text-center text-md-start">
+      
+      
+      <div class="col-md-4 mb-3 quicklink" >
+        <h4> <i class="fa-solid fa-link"></i><br>Quick Links</h4>
+        <p class="mb-1 quickstyle"><a href="/" class="text-light text-decoration-none">Home</a></p>
+        <p class="mb-1 quickstyle"><a href="{% url 'product' %}" class="text-light text-decoration-none">Products</a></p>
+        <p class="mb-1 quickstyle"><a href="{% url 'latest' %}" class="text-light text-decoration-none">Latestproduct </a></p>
+        <p class="mb-1 quickstyle"><a href="#" class="text-light text-decoration-none">Contact</a></p>
+
+      </div>
+
+    
+
+      <div class="col-md-4 mb-3 footcont">
+        <h4><i class="fa-regular fa-address-book"></i><br>  Contact</h4>
+        <p class="confoot">Tamilarasn </p>
+        <p class="confoot">Coimbatore</p>
+        <p class="confoot">+917010548257</p>
+        <p class="confoot">rtamila057@gmail.com</p>
+      </div>
+ 
+    </div>
+
+    <div class="col-md-4 footdeliv">
+      <p><i class="fa-brands fa-amazon fa-beat-fade fa-2xl" style="color: rgb(255, 212, 59);"></i>   Free Delivery</p>
+      <p><i class="fa-solid fa-shield fa-beat-fade fa-xl" style="color: rgb(255, 212, 59);"></i>   Genuine Products</p>
+      <p><i class="fa-solid fa-lock fa-bounce fa-xl" style="color: rgb(255, 212, 59);"></i>  Secure Checkout</p>
+    </div>
+
+    
+
+    
+
+    <div class="text-center ftstore">
+      <small>© 2026 Croma Store | All Rights Reserved</small>
+    </div>
+
+  </div>
+
+</footer>
+
+
+
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- FIXED STATIC JS PATH -->
+<script src="{% static 'js/script.js' %}"></script>
+
+
+
+
+</body>
+</html>
+
+
+

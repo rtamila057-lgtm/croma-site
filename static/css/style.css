@@ -1,0 +1,1070 @@
+.banner .b1{
+    width: 100%;
+    height: 100vh;
+    background-image: url("/static/image/banner-1.png");   
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-top: 150px;
+    color: white;
+    border-radius: 10px;
+}
+
+
+/* OPTIONAL: smooth effect */
+.banner .carousel-item {
+  /* transition: 0.6s ease-in-out; */
+  transition: all 0.9s ease-in-out;
+}
+
+.discont{
+  font-size:27px;
+  color: rgb(241, 139, 38);
+  font-weight: 700;
+  padding-left: 50px;
+  font-family: 'Poppins', sans-serif;
+}
+
+
+.star-icon{
+    color: rgb(250, 217, 31);
+    font-size: 18px;
+    padding-left: 9px;
+}
+
+.spark{
+  font-size:33px;
+  color:whitesmoke;
+  font-weight: 800;
+  font-family: 'Playfair Display', serif;
+  padding-left:44px;
+  line-height: 40px;
+}
+
+.offer{
+  color: rgb(241, 139, 38);
+  font-size: 42px;
+}
+
+.display{
+  padding-top: 14px;
+  padding-left: 40px;
+  font-size: 18px;
+}
+
+.sizedis{
+  color: rgb(241, 139, 38);
+  font-size:30px;
+
+}
+
+.disbtn{
+  width: 135px;
+  height:50px;
+  text-align: center;
+  margin-left: 145px;
+  margin-top: 29px;
+  font-weight: 700;
+  border: 7px solid whitesmoke;
+  background-color: rgb(245, 170, 30);
+  border-radius: 15px;
+  font-family: 'Poppins', sans-serif; 
+}
+
+
+/* -------------------- */
+
+.banner .b2{
+    width: 100%;
+    height: 100vh;
+    background-image: url("/static/image/banner-2.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-top: 150px;
+    color: white;
+    border-radius: 10px;
+}
+
+
+.samsu{
+  font-size: 50px;
+  font-weight: 900;
+  color: white;
+  font-family: 'Playfair Display', serif;
+  padding-left:110px;
+  padding-top: 15px;
+} 
+
+
+.crystal{
+  font-size: 42px;
+  font-weight: 700;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  padding-left: 99px;
+  
+}
+
+.pricetv{
+  font-weight: 600;
+  color:white;
+  font-size: 37px;
+  padding-left: 99px;
+  padding-right: 50px;
+  
+
+}
+
+.upcall{
+  color: white;
+  padding-left: 99px;
+  padding-top: 13px;
+
+}
+
+/* ------------------------------------ */
+
+
+.banner .b3{
+    width: 100%;
+    height: 100vh;
+    background-image: url( "/static/image/banner-3.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-top: 150px;
+    color: white;
+    border-radius: 10px;
+}
+
+.sandis{
+  color: red;
+  font-size:45px;
+  font-weight: 900;
+  padding-left:40px;
+  font-family: 'Playfair Display', serif;
+}
+
+
+.storetx{
+  font-size:45px;
+  font-weight: 700;
+  padding-left:40px;
+  color:black;
+  line-height: 35px;
+
+}
+
+
+.domore{
+  font-size:45px;
+  font-weight: 700;
+  padding-left:40px;
+  color: blue;
+  line-height: 35px;
+}
+
+.highper{
+  color: rgb(255, 128, 0);
+  padding-left:20px;
+  font-weight: 700;  
+}
+
+.sandisoff{
+  width: 130px;
+  height: 110px;
+  border:7px solid rgb(255, 235, 205);
+  margin-left: 35px;
+  margin-top: 45px;
+  padding-left: 24px;
+  font-size: 23px;
+  font-weight: 800;
+  line-height:29px;
+}
+
+.sandupto{
+  color: blue;
+  font-size: 35px;
+}
+
+
+.santimer{
+  padding-left: 40px;
+  font-size: 27px;
+  font-weight: 800;
+  color: rgb(255, 255, 255);
+}
+
+
+.sandtimer{
+  color:red;
+  font-size: 45px;
+  font-weight: 700;
+}
+
+
+
+.capacity-box{
+  display: flex;
+  gap:10px;
+  margin-top: 30px;
+  justify-content: flex-start; 
+  align-items: flex-start;
+  margin-left: 54%;
+  margin-top: -45px;
+  
+} 
+
+
+ .gpsandisk{
+  width: 80px;
+  height: 45px;
+  border: 2px solid ;
+  color: white;
+  border-radius: 10px;
+  font-size: 18px;
+  font-weight: 800;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+
+
+
+
+
+
+
+
+/* ---------------------page 2--categories-------------------------------------- */
+
+.shoptext{
+  padding-left: 80px;
+  padding-top: 50px;
+  padding-bottom: 30px;
+  font-size: 25px;
+  font-weight: 900;
+  font-style: oblique;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+
+ 
+.categories{
+    display:flex;
+    justify-content:center;
+    align-items:flex-start;
+    flex-wrap:wrap;
+    gap:38px;
+    margin-bottom:40px;
+    background-color:white;
+    
+}
+
+.item{
+    text-align:center;
+    width:180px;
+}
+
+.item img{
+    width:130px;
+    height:130px;
+    border-radius:50%;
+    object-fit:cover;
+    margin-bottom:5px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.2);
+}
+
+.categoriesname{
+    font-size:18px;
+    font-weight:800;
+    padding-top: 14px;
+    color:#111;
+    font-family:Arial, sans-serif;
+    min-height: 45px;
+
+}
+
+.collection{
+    font-size:16px;
+    padding-top:5px;
+    line-height:22px;
+    font-weight:600;
+    color:rgba(12, 12, 12, 0.957);
+    font-family:Arial, sans-serif;
+    min-height: 70px;
+}
+
+/* ------------search bar inputbox- 1-------------------- */
+
+.form-control {
+  border-color: #322e2e15;
+  box-shadow: 0 0 10px rgba(28, 28, 28, 0.903);
+  border:3px solid;
+
+}
+
+.search-btn-dark{
+  border: 4px solid black;
+  background-color: black;
+  color: white;
+  font-weight: 700;
+  border-radius: 10px;
+}
+
+.search-btn-dark:hover{
+  background-color: rgba(240, 19, 19, 0.905);
+  color: #111;
+}
+
+.navbar {
+  width: 100%;
+  height:10vh;
+  font-weight:500;
+  font-size: 18px;
+  color: #111;
+}
+
+
+.nav-link:hover{
+  color:rgb(255, 166, 2);
+  font-size: 20px;
+  font-weight: 700;
+  transform: translateY(-3px);
+   transition: all 0.3s ease;
+}
+
+
+/* -----------page 2 service box--------- */
+
+ 
+.service{
+    display:flex;
+    flex-wrap:wrap;
+    gap:45px; 
+    border:5px solid #9e9898;
+    border-radius:20px;
+    justify-content: center; 
+    width: 90%;
+    height: 70%;
+    margin:auto;
+    background-color:rgb(224, 221, 211);
+    margin-bottom:90px;
+    box-shadow:0  1px 10px 18
+    px rgb(235, 222, 182);
+
+} 
+
+
+.service-box{
+    width:250px;
+}
+
+.service-box h3{
+    font-size:21px;
+    padding-top:70px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: 700;
+    
+    
+}
+
+.service-box p{
+    font-size:17px;
+    padding-bottom: 55px;
+    color:rgb(74, 94, 94);
+    line-height:25px;
+    font-weight: 500;
+    padding-top: 13px;
+} 
+
+.serviceicons {
+    font-size: 34px;
+    list-style: none;
+}
+
+
+.service-box i{
+    font-size: 40px;
+    color: rgb(255, 212, 59);
+    
+}  
+
+
+
+/* --------------------------page3---mobile--------------------------------------- */
+.textmobile{
+  padding-left:110px;
+  padding-top: 33px;
+  padding-bottom: 25px;
+  font-size: 30px;
+  font-weight: 900;
+  font-style: oblique;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+/* Product Card */
+.card {
+  width: 100%;
+  height: 50%;
+  border-radius: 12px;
+  overflow: hidden;
+  transition: 0.3s;
+}
+
+/* Hover Effect */
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+/* Image */
+.card-img-top {
+  display: block;
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  object-position: center;
+}
+
+/* Card Body */
+.card-body {
+  width: 100%;
+  height: 200px;
+}
+
+/* Title */
+.card-title {
+  font-size: 18px;
+  font-weight: 600;
+}
+/* --------------page---4-top picks for you--------------------------------------- */
+
+
+.textpicks{
+  padding-left:110px;
+  padding-top: 47px;
+  padding-bottom: 47px;
+  font-size: 30px;
+  font-weight: 900;
+  font-style: oblique;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+
+.card-pickmodel{
+  padding-top: 5px;
+}
+
+.view-btn{
+    display: inline-block;
+    width: 170px;
+    height: 40px;
+    border-radius: 11px;
+    background-color:rgba(40, 36, 36, 0.832);
+    border:3px solid rgb(47, 48, 48);
+    color:rgb(236, 232, 232);
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+    font-size: 14px;
+    font-weight: 500;
+    align-items: center; 
+    padding-top: 6px;
+}
+
+
+.view-btn:hover{
+  background-color:whitesmoke;
+  color:black;
+}
+
+/* ----------------------croma mobile---- */
+.croma-card-body {
+  width: 100%;
+  height: 255px; 
+}
+
+
+
+
+
+
+
+/* ------------------page---5---watch------------------------- */
+
+
+.watchcloudy{
+  width:100%;
+  height: 500px;
+  background-image: url(https://cdn1.zohoecommerce.com/stock_images/gadgets-zs200006/zcstock-images-16.webp?storefront_domain=sparkgadgets-demo.zohoecommerce.com);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 20px;
+  border-radius: 13px;
+
+}
+
+
+
+.banner-text{
+  padding-left:90px;
+}
+
+.anywhere{
+ color: rgba(241, 166, 27, 0.967);
+ padding-top:135px;
+ 
+}
+
+
+.save{
+  font-size:60px;
+  color: rgb(255, 255, 255);
+  font-weight:700;
+  font-style:oblique;
+
+}
+
+
+.smart{
+  color:rgb(255, 168, 5);
+  font-size:19px;
+  padding-top: 1px;
+}
+
+
+.shopwatch{
+  width: 190px;
+  height: 50px;
+  background-color: rgba(243, 162, 11, 0.984);
+  color: black;
+  text-align: center;
+  font-size: 17px;
+  font-weight: 700;
+  border: none;
+  border-radius:16px;
+  padding-bottom: 3px;
+}
+
+
+/* -------------------page 6 gaming----------------------------------- */
+
+
+.gamemobile{
+  width: 100%;
+  height: 275px;
+  /* display: flex; */
+  background-image: url("https://cdn1.zohoecommerce.com/stock_images/gadgets-zs200006/zcstock-images-17.webp?storefront_domain=sparkgadgets-demo.zohoecommerce.com");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  text-align: left;
+  margin-top: 80px;
+  border-radius: 20px;
+
+}
+
+
+.gamegates{
+  width: 100%;
+  height: 275px;
+  /* display: flex; */
+  background-image: url("https://cdn1.zohoecommerce.com/stock_images/gadgets-zs200006/zcstock-images-18.webp?storefront_domain=sparkgadgets-demo.zohoecommerce.com");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  text-align: left;
+  margin-top: 80px;
+  border-radius: 20px;
+}
+
+
+.turn{
+  color:black;
+  margin: 0;
+  font-size: 17px;
+  padding-top: 38px;
+  font-weight:600;
+} 
+
+
+.chaos{
+    color: orange;
+    padding-top: 3px;
+    font-size:39px;
+    font-weight:700;
+
+}
+
+.vity{
+  color:black;
+  font-size: 18px;
+  font-weight:700;
+}
+
+
+.gamenow{
+  width:150px;
+  height:46px;
+  background-color:orange;
+  color: black;
+  border-radius: 15px;
+  font-size: 16px;
+  font-weight:800;
+  border-style: none;
+  padding-bottom:3px;  
+}
+
+
+.underline{
+    width: 266px;
+    height:3px;
+    background-color: white;
+    margin-bottom: 3px;
+    
+}
+
+.gam{
+  padding-top: 36px;
+  font-size:36px;
+  font-weight:700;
+  color: orange;
+
+}
+
+
+.board{
+  color: azure;
+  font-weight:500;
+  font-size:16px;
+  padding-top:3px;
+
+}
+
+
+
+/* ---------------page 7 login style---------------------------------------- */
+
+
+.loginpage {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logpage {
+  width: 480px;
+  height: 320px;
+  border: 6px solid rgba(56, 54, 56, 0.91) ;
+  border-radius: 20px;
+  background-color: rgb(250, 245, 245);
+  box-shadow: 0 10px 30px 15px rgba(42, 41, 42, 0.975);
+
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 90px;
+  line-height: 17px;
+  margin-right: 55px;
+}
+
+
+
+.logpage input {
+  width: 250px;
+  height: 40px;
+  padding-left: 40px;
+  border-radius: 13px;
+  margin-top: 10px;
+  border: 4px solid rgba(38, 37, 36, 0.716);
+  font-size: 16px;
+  padding-bottom: 2px; 
+  font-weight:700;
+}
+
+
+
+.logbutton{
+  width: 145px;
+  height: 42px;
+  border: 4px solid rgba(39, 38, 38, 0.806);
+  background-color:rgb(98, 94, 94);
+  color: rgb(255, 255, 255);
+  border-radius: 18px;
+  margin-right: 23px;
+  margin-bottom: 8px;
+  font-size: 16px;
+  font-weight: 800;
+  padding-bottom: 3px;
+  letter-spacing:1px;
+}
+
+
+.logbutton:hover{
+  background-color:rgb(243, 237, 227);
+  color: black;
+  font-size: 20px;
+  padding-bottom: 2px;
+}
+
+
+.uselog {
+  font-size: 17px;
+  font-weight: 800;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding: 12px;
+}
+
+
+
+/* -------------------page 8 latest products -------------------------------------- */
+
+
+
+.LatestProd{
+  margin-top: 55px;
+  font-weight: 800;
+  font-size:28px;
+  font-family: Georgia,'Times New Roman', Times, serif;
+  padding-left: 60px;
+  padding-bottom: 25px;
+}
+
+
+
+
+.btnlatest{
+    display: inline-block;
+    width: 170px;
+    height: 40px;
+    border-radius: 11px;
+    background-color:rgba(40, 36, 36, 0.832);
+    border:3px solid rgb(47, 48, 48);
+    color:rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 800;
+    font-size: 14px;
+    font-weight: 500;
+    margin-left: 25px;
+    margin-top: 17px;  
+}
+
+
+
+.btnlatest:hover{
+  background-color:rgba(56, 252, 252, 0.777);
+  color: rgb(0, 0, 0);
+
+}
+
+
+
+
+/*---------------page 9 register form----------------------------*/
+
+
+
+.registerstyle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+
+.formstyle{
+   width: 35%;
+   height: 50vh;
+   border: 6px solid rgba(36, 35, 35, 0.852);
+   padding: 30px;
+   border-radius: 20px;
+   background-color: #f5f5f5;
+   margin-right:160px;
+   margin-bottom: 85px;
+   /* box-shadow: 0 4px 35px 30px rgb(19, 18, 19); */
+   box-shadow: 0 10px 30px 15px rgba(42, 41, 42, 0.975);
+
+   
+
+
+}
+
+.registerf{
+  padding-left: 28px;
+  font-weight: bold;
+  font-size: 18px;
+  margin-top: 17px;
+}
+
+
+.inputstyle{
+ margin-left: 48px;
+ width:220px;
+ height: 34px;
+ border-radius:13px;
+ border-color: rgb(47, 46, 46);
+ border: 3px solid rgba(38, 37, 36, 0.716);
+ font-size: 18px;
+ font-weight: 500;
+ padding-left: 40px;
+}
+
+
+.styleemail{
+ margin-left: 79px;
+ width:220px;
+ height: 34px;
+ border-radius: 13px;
+ border-color: rgb(47, 46, 46);
+ border: 3px solid rgba(38, 37, 36, 0.716);
+ font-size: 18px;
+ font-weight: 500;
+ padding-left: 40px;
+}
+
+
+.registerbtn{
+  width: 145px;
+  height: 42px;
+  margin-left: 120px;
+  margin-top:12px;
+  font-size: 16px;
+  font-weight: 700;
+  border: 4px solid rgba(39, 38, 38, 0.806);
+  background-color:rgb(98, 94, 94);
+  color: rgb(255, 255, 255);
+  border-radius: 18px;
+}
+
+.registerbtn:hover{
+  background-color:rgb(243, 237, 227);
+  color: black;
+  font-size: 20px;
+  padding-bottom: 2px;
+}
+
+
+/* ------------page 10 footer---------------- */
+
+.footer{
+  width: 100%;
+  height: 87vh;
+  background-color:rgb(33, 32, 32);
+  color: whitesmoke;
+  margin-top: 80px;
+  margin-bottom: 5px;
+  border-radius: 10px;
+}
+
+
+.footcroma{
+  font-size: 25px;
+  font-weight: 600;
+  padding-top: 40px;
+  text-align: center;
+  padding-right: 80px;
+}
+
+
+.foottxt{
+  font-size: 15px;
+  font-weight: 500;
+  text-align: center;
+  padding-right: 90px;
+  padding-top: 10px;
+
+}
+
+.footbest{
+  font-size:16px;
+  font-weight: 600;
+  text-align: center;
+  word-spacing: 2px;
+  line-height: 10px;
+  padding-right: 90px;
+  
+
+}
+
+.quicklink{
+  padding-left: 230px;
+  padding-top: 30px;
+
+}
+
+.footcont{
+  padding-left:290px;
+  padding-top: 30px;
+  line-height: 13px;
+  padding-bottom: 20px;
+
+}
+
+
+.footdeliv{
+    width: 90%;
+    padding-top: 30px;
+    padding-left: 150px;
+    padding-bottom: 30px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: nowrap;
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    white-space: nowrap;
+    position: relative;
+}
+
+
+.footdeliv::before{
+    content: "";
+    position: absolute;
+
+    top: 0;
+    left: 110px;      
+    width: 85%;       
+    border-top: 1px solid white;
+}
+
+
+.footdeliv p{
+    margin: 0;
+}
+
+
+.footdeliv p::after{
+    content: " | ";
+    padding: 0 25px;
+}
+
+
+.footdeliv p:last-child::after{
+    content: "";
+}
+
+
+
+
+.ftstore{
+    width: 90%;
+    padding-top: 17px;
+    font-size: 18px;
+    position: relative;
+}
+
+.ftstore::before{
+    content: "";
+    position: absolute;
+
+    top: 0;
+    left: 110px;    
+    width: 85%;     
+    border-top: 1px solid white;
+}
+
+
+.confoot:hover{
+  width: 160px;
+  height: 45px;
+  border: 4px solid white;
+  text-align: center;
+  padding-top: 9px;
+  box-shadow: 0 0 10px 3px white;
+  border-radius: 15px;
+  font-weight: 700;
+  font-size:19px;
+}
+
+.quickstyle:hover{
+  width: 160px;
+  height: 45px;
+  border: 4px solid white;
+  text-align: center;
+  padding-top: 3px;
+  box-shadow: 0 0 10px 3px white;
+  border-radius: 15px;
+  font-weight: 700;
+  font-size:19px;
+}
+
+
+
+/* ------------product list--------------------- */
+
+.product-card {
+    width: 300px;
+    border-radius: 15px;
+    overflow: hidden;
+    background: #fff;
+    transition: 0.3s ease;
+    margin: auto;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+.product-img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.product-body {
+    padding: 15px;
+    text-align: center;
+}
+
+.product-brand {
+    font-size: 18px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.product-model {
+    font-size: 14px;
+    color: #777;
+    margin-bottom: 10px;
+}
+
+.product-price {
+    font-size: 18px;
+    color: #28a745;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.btn-cart {
+    display: inline-block;
+    padding: 8px 15px;
+    background: #007bff;
+    color: #fff;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.btn-cart:hover {
+    background: #0056b3;
+    color: #fff;
+}
+
+
+
+

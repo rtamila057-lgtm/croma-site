@@ -1,0 +1,49 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+<section>
+
+  <h4 class="textpicks">Top picks for you</h4>
+
+  <div class="container">
+    <div class="row">
+
+      {% for picks in electronics %}
+
+      <div class="col-md-6 col-lg-3 mb-4" id="{{ picks.id }}">
+
+        <div class="card h-100 shadow-sm">
+
+          {% if picks.image %}
+            <img src="{{ picks.image.url }}" class="card-img-top" alt="{{ picks.brand }}">
+          {% endif %}
+
+          <div class="card-body d-flex flex-column">
+
+            <h5 class="card-pickbrand">{{ picks.brand }}</h5>
+            <p class="card-pickmodel">{{ picks.model_name }}</p>
+            <h6 class="text-pickprice">₹ {{ picks.price }}</h6>
+
+            
+            <div class="mt-auto text-center mt-2">
+              <a href="{% url 'product_list' picks.id %}">
+                <button class="view-btn">VIEW DETAILS</button>
+              </a>
+              
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+
+      {% endfor %}
+
+    </div>
+  </div>
+
+</section>
+
+{% endblock %}
